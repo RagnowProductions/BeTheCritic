@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeTheCritic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>BeTheCritic</h1>
+
+  <div id="api-key-section">
+    <label for="apiKey">OpenAI API Key: </label>
+    <input type="password" id="apiKey" placeholder="Enter your API key">
+  </div>
+
+  <div id="prompt-section">
+    <label for="prompt">Enter a prompt: </label>
+    <input type="text" id="prompt" placeholder="Describe the image...">
+  </div>
+
+  <div id="attributes-section">
+    <label for="attribute">Add an attribute: </label>
+    <input type="text" id="attribute" placeholder="e.g., Van Gogh painting">
+    <button id="add-attribute">Add</button>
+    <ul id="attributes-list"></ul>
+  </div>
+
+  <button id="generateBtn">Generate Image</button>
+  <button id="saveDataBtn">Save Data</button>
+
+  <div id="output">
+    <p id="status">Your generated image will appear here.</p>
+    <img id="generatedImage" alt="Generated AI Image">
+    <div id="rating">
+      <button id="likeBtn">👍 Like</button>
+      <button id="dislikeBtn">👎 Dislike</button>
+    </div>
+  </div>
+
+  <h2>Mii Channel for Models</h2>
+  <div id="modelGallery"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
