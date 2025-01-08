@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+input, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#attributes-list {
+  list-style: none;
+  padding: 0;
+}
+
+#attributes-list li {
+  margin: 5px 0;
+}
+
+#output {
+  margin-top: 20px;
+}
+
+#generatedImage {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  display: none;
+}
+
+#rating {
+  margin-top: 10px;
+  display: none;
+}
+
+#modelGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.model {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.model img {
+  width: 100%;
+  height: auto;
+}
